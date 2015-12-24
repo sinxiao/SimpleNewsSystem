@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainAll"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_channel_bg_normal"
+        android:weightSum="4" >
+	
+        <!-- 新闻列表，行业新闻 -->
+        <Button
+            android:id="@+id/btnNews"
+            android:layout_width="wrap_content"
+            android:text="@string/news"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_channel_bg_selected"
+            android:layout_weight="1" />
+
+       <!-- 正在发生的新闻，及时新闻 -->
+        <Button
+            android:id="@+id/btnAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/air"
+            android:background="@drawable/tab_front_bg"
+            android:layout_weight="1"
+             />
+        <!-- 自己收藏的新闻，新闻对现在造成了大大的影响，造成了各种人认知的全新改变与革命  博文 -->
+         <Button
+            android:id="@+id/btnOlds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/olds"
+            android:background="@drawable/tab_front_bg"
+            android:layout_weight="1"
+             />
+         <!-- 好友新闻，由好友发布的各种新闻或评论。博客，微博日志等等 -->
+          <Button
+            android:id="@+id/btnFNews"
+            android:text="@string/fnews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_front_bg"
+            android:layout_weight="1"
+             />
+    </LinearLayout>
+    <!-- 显示新闻列表的地方 通过 左右滑动可以选择新闻类别  上面显示新闻的也要会相应改变-->
+     <ViewFlipper
+        android:id="@+id/pageFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ViewFlipper>
+</LinearLayout>

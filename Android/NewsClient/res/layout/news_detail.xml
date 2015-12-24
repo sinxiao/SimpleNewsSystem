@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/go_back_up" />
+
+        <Button
+            android:id="@+id/btnComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dip"
+            android:background="@drawable/btn_comment" />
+
+        <TextView
+            android:id="@+id/txtItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btnBack"
+            android:ellipsize="marquee"
+            android:paddingLeft="4dip"
+            android:singleLine="true"
+            android:textSize="24dip" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/bottomBarr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar_content"
+        android:gravity="center_vertical"
+        android:stretchColumns="0" >
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:paddingRight="3dip" >
+
+            <ImageButton
+                android:id="@+id/btnShowComment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:background="@drawable/btn_pinglun"
+                android:enabled="true" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/br_share" />
+
+            <Button
+                android:id="@+id/btnLove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/attention1" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomBarr"
+        android:layout_below="@id/titleLayout"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar_content"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/edtInputComment"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:maxLength="25"
+            android:minLines="6"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/btnSendComment"
+            android:background="@drawable/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

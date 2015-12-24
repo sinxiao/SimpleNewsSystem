@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="app_name">新闻系统</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_start_main">a主界面</string>
+    <string name="startApp">开始运行</string>
+    <string name="news">新闻</string>
+    <string name="olds">观点</string>
+    <string name="air">直播</string>
+    <string name="fnews">博闻</string>
+    <string name="tip_wait">请稍后...</string>
+    <string name="tip_error">没有最新数据，请稍后</string>
+    <string name="comment">评论</string>
+    <string name="share">分析</string>
+    <string name="love">收藏</string>
+    <string name="top">顶</string>
+    <string name="down">踩</string>
+    <string name="end">已到最后的一页</string>
+    <string name="more">更多</string>
+    <string name="clientprotocolexception">格式有误</string>
+    <string name="socketexception">无法建立连接</string>
+    <string name="sockettimeoutexception">请求超时</string>
+    <string name="exception">未知错误</string>
+    <string name="unsupportedencodingexception">不支持的字符格式</string>
+    <string name="nomore">没有了</string>
+    <string name="jsonexception">数据格式(json)错误</string>
+    <string name="parseexception">解析错误</string>
+    <string name="pull_to_refresh_pull_label">拖动刷新</string>
+    <string name="pull_to_refresh_refresh_lasttime">上次刷新时间</string>
+    <string name="more_data">更多信息</string>
+    <string name="load_more">加载更多</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="tweet_pub_head_title">发布微博</string>
+     <string name="img_from_camera">手机拍照</string>
+    <string name="img_from_album">手机相册</string>
+    <string name="ui_insert_image">插入图片</string>  
+</resources>

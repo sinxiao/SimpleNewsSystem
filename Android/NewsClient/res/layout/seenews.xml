@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+	    android:scrollbars="vertical"
+	    android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="10.0dip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:gravity="center" >
+				<TextView android:id="@+id/news_detail_author"  
+			    		android:layout_width="wrap_content" 
+			           	android:layout_height="wrap_content" 
+			           	android:textSize="@dimen/text_size_13"
+			            android:textColor="@color/author_text"/>
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+			        android:textSize="@dimen/text_size_12"
+			        android:textColor="@color/gray"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSouce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       	android:layout_marginLeft="6.0dip"
+			           	android:textSize="@dimen/text_size_12"
+			            android:textColor="@color/gray" />
+                  <ImageView 
+				      	android:layout_width="wrap_content" 
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10.0dip"
+				        android:layout_gravity="center_vertical"
+				        android:src="@drawable/widget_comment_count_icon"/>	        
+			       	<TextView android:id="@+id/news_detail_commentcount"  
+			    		android:layout_width="wrap_content" 
+			           	android:layout_height="wrap_content" 
+			           	android:layout_marginLeft="3.0dip"
+			           	android:textSize="@dimen/text_size_12"
+			            android:textColor="@color/gray"/>
+            </LinearLayout>
+
+           <View style="@style/detail_cut_line"/>
+
+            <TextView
+                android:id="@+id/txtContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="0dip"
+                android:layout_marginTop="6dip"
+                android:focusable="true"
+                android:paddingLeft="6dip"
+                android:paddingRight="4dip"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

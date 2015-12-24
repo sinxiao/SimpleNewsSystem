@@ -1,0 +1,17 @@
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\WoeMobile.DBUtility.dll
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\WoeMobile.DBUtility.pdb
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\IBatisNet.Common.dll
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\MySql.Data.dll
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\System.Data.SQLite.DLL
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\obj\Debug\WoeMobile.DBUtility.dll
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\obj\Debug\WoeMobile.DBUtility.pdb
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\WoeMobile.DBUtility.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\WoeMobile.DBUtility.pdb
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\IBatisNet.Common.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\MySql.Data.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\obj\Debug\WoeMobile.DBUtility.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\DBUtility\obj\Debug\WoeMobile.DBUtility.pdb

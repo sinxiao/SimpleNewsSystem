@@ -1,0 +1,1613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B535162-10C2-4238-BC56-193B968E1834}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WoeMobile.Web</RootNamespace>
+    <AssemblyName>WoeMobile.Web</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="LTP.Accounts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LtpPageControl, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Lib\LtpPageControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Accounts\Drawable\ImageDetail.aspx" />
+    <Content Include="Admin\Accounts\Drawable\ImageItem.aspx" />
+    <Content Include="Admin\Accounts\Drawable\ImageItemList.aspx" />
+    <Content Include="Admin\Accounts\Infor\InforList.aspx" />
+    <Content Include="Admin\Accounts\News\EditNews.aspx" />
+    <Content Include="Admin\Accounts\News\NewsList.aspx" />
+    <Content Include="Admin\Accounts\Picture\AddTrace.aspx" />
+    <Content Include="Admin\Accounts\Picture\AjaxFileUpload.aspx" />
+    <Content Include="Admin\Accounts\Picture\AjaxTest.aspx" />
+    <Content Include="Admin\Accounts\Picture\ImageByLocationList.aspx" />
+    <Content Include="Admin\Accounts\Picture\ImageDetails.aspx" />
+    <Content Include="Admin\Accounts\Picture\LocationByTraceList.aspx" />
+    <Content Include="Admin\Accounts\Picture\PictureList.aspx" />
+    <Content Include="Admin\Accounts\Picture\uploading.gif" />
+    <Content Include="Admin\Accounts\User\UserList.aspx" />
+    <Content Include="Client\CommentClientDo.aspx" />
+    <Content Include="Client\ImageDoClient.aspx" />
+    <Content Include="Client\NewsDoClient.aspx" />
+    <Content Include="Client\PostFile.aspx" />
+    <Content Include="Client\UserClientDo.aspx" />
+    <Content Include="Client\UserDoClient.aspx" />
+    <Content Include="Client\DirectSQLOnServer.aspx" />
+    <Content Include="Controls\checkright.ascx" />
+    <Content Include="Controls\copyright.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="news\Add.aspx" />
+    <Content Include="news\List.aspx" />
+    <Content Include="news\Modify.aspx" />
+    <Content Include="news\NewsDetail.aspx" />
+    <Content Include="news\Show.aspx" />
+    <Content Include="system_dntb\Advanced.aspx" />
+    <Content Include="system_dntb\calculator.aspx" />
+    <Content Include="system_dntb\calendar.aspx" />
+    <Content Include="system_dntb\collection.aspx" />
+    <Content Include="system_dntb\en-uk\Resources.xml" />
+    <Content Include="system_dntb\en-us\Resources.xml" />
+    <Content Include="system_dntb\en\Resources.xml" />
+    <Content Include="system_dntb\find.aspx" />
+    <Content Include="system_dntb\flv.swf" />
+    <Content Include="system_dntb\img\aspnet2.gif" />
+    <Content Include="system_dntb\img\logo_s.png" />
+    <Content Include="system_dntb\img\selcolor.gif" />
+    <Content Include="system_dntb\importword.aspx" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.Assembly.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.BatchFile.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.CSharp.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.CSS.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.GrammarProduction.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.HTML.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.INIFile.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.Java.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.JScript.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.Lua.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.MSIL.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.Pascal.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.Perl.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.PHP.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.PowerShell.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.Python.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.SQL.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.VBDotNet.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.VBScript.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.XAML.xml" />
+    <Content Include="system_dntb\Lexers\ActiproSoftware.XML.xml" />
+    <Content Include="system_dntb\link.aspx" />
+    <Content Include="system_dntb\mp3player.swf" />
+    <Content Include="system_dntb\onlinecode.aspx" />
+    <Content Include="system_dntb\OutliningIndicators\ContractedBlock.gif" />
+    <Content Include="system_dntb\OutliningIndicators\ContractedSubBlock.gif" />
+    <Content Include="system_dntb\OutliningIndicators\ExpandedBlockEnd.gif" />
+    <Content Include="system_dntb\OutliningIndicators\ExpandedBlockStart.gif" />
+    <Content Include="system_dntb\OutliningIndicators\ExpandedSubBlockEnd.gif" />
+    <Content Include="system_dntb\OutliningIndicators\ExpandedSubBlockStart.gif" />
+    <Content Include="system_dntb\OutliningIndicators\InBlock.gif" />
+    <Content Include="system_dntb\OutliningIndicators\None.gif" />
+    <Content Include="system_dntb\PasteCode.aspx" />
+    <Content Include="system_dntb\search.aspx" />
+    <Content Include="system_dntb\skin\default\editor.css" />
+    <Content Include="system_dntb\skin\default\emot.aspx" />
+    <Content Include="system_dntb\skin\default\face\other1\001.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\002.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\003.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\004.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\005.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\006.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\007.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\008.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\009.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\010.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\011.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\012.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\013.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\014.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\015.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\016.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\017.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\018.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\019.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\020.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\021.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\022.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\023.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\024.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\025.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\026.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\027.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\028.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\029.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\030.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\031.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\032.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\033.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\034.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\035.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\036.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\037.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\038.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\039.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\040.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\041.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\042.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\043.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\044.gif" />
+    <Content Include="system_dntb\skin\default\face\other1\045.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\001.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\002.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\003.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\004.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\005.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\006.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\007.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\008.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\009.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\010.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\011.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\012.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\013.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\014.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\015.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\016.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\017.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\018.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\019.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\020.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\021.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\022.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\023.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\024.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\025.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\026.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\027.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\028.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\029.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\030.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\031.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\032.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\033.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\034.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\035.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\036.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\037.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\038.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\039.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\040.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\041.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\042.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\043.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\044.gif" />
+    <Content Include="system_dntb\skin\default\face\other2\045.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\001.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\002.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\003.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\004.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\005.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\006.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\007.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\008.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\009.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\010.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\011.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\012.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\013.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\014.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\015.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\016.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\017.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\018.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\019.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\020.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\021.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\022.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\023.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\024.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\025.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\026.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\027.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\028.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\029.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\030.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\031.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\032.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\033.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\034.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\035.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\036.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\037.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\038.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\039.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\040.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\041.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\042.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\043.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\044.gif" />
+    <Content Include="system_dntb\skin\default\face\qq\045.gif" />
+    <Content Include="system_dntb\skin\default\help.htm" />
+    <Content Include="system_dntb\skin\default\help\about.htm" />
+    <Content Include="system_dntb\skin\default\help\edit.htm" />
+    <Content Include="system_dntb\skin\default\help\face.htm" />
+    <Content Include="system_dntb\skin\default\help\function.htm" />
+    <Content Include="system_dntb\skin\default\help\main.htm" />
+    <Content Include="system_dntb\skin\default\help\menu.htm" />
+    <Content Include="system_dntb\skin\default\help\question.htm" />
+    <Content Include="system_dntb\skin\default\help\skill.htm" />
+    <Content Include="system_dntb\skin\default\help\state.htm" />
+    <Content Include="system_dntb\skin\default\help\top.htm" />
+    <Content Include="system_dntb\skin\default\img\aspnet2.gif" />
+    <Content Include="system_dntb\skin\default\img\bgcolor.gif" />
+    <Content Include="system_dntb\skin\default\img\bian.gif" />
+    <Content Include="system_dntb\skin\default\img\bold.gif" />
+    <Content Include="system_dntb\skin\default\img\browser-support.gif" />
+    <Content Include="system_dntb\skin\default\img\Calculator.gif" />
+    <Content Include="system_dntb\skin\default\img\code.gif" />
+    <Content Include="system_dntb\skin\default\img\code2.GIF" />
+    <Content Include="system_dntb\skin\default\img\copy.gif" />
+    <Content Include="system_dntb\skin\default\img\createlink.gif" />
+    <Content Include="system_dntb\skin\default\img\cut.gif" />
+    <Content Include="system_dntb\skin\default\img\date.gif" />
+    <Content Include="system_dntb\skin\default\img\date1.gif" />
+    <Content Include="system_dntb\skin\default\img\delete.gif" />
+    <Content Include="system_dntb\skin\default\img\edit1.gif" />
+    <Content Include="system_dntb\skin\default\img\edit_en-us.gif" />
+    <Content Include="system_dntb\skin\default\img\edit_zh-cn.gif" />
+    <Content Include="system_dntb\skin\default\img\edit_zh-tw.gif" />
+    <Content Include="system_dntb\skin\default\img\emot.gif" />
+    <Content Include="system_dntb\skin\default\img\emot1.gif" />
+    <Content Include="system_dntb\skin\default\img\excel.gif" />
+    <Content Include="system_dntb\skin\default\img\excel1.GIF" />
+    <Content Include="system_dntb\skin\default\img\fieldset.gif" />
+    <Content Include="system_dntb\skin\default\img\font.gif" />
+    <Content Include="system_dntb\skin\default\img\font1.gif" />
+    <Content Include="system_dntb\skin\default\img\forecolor.gif" />
+    <Content Include="system_dntb\skin\default\img\getpage.gif" />
+    <Content Include="system_dntb\skin\default\img\getpage1.gif" />
+    <Content Include="system_dntb\skin\default\img\help-1.gif" />
+    <Content Include="system_dntb\skin\default\img\help.gif" />
+    <Content Include="system_dntb\skin\default\img\help1.gif" />
+    <Content Include="system_dntb\skin\default\img\helplogo.gif" />
+    <Content Include="system_dntb\skin\default\img\icq.gif" />
+    <Content Include="system_dntb\skin\default\img\icq1.gif" />
+    <Content Include="system_dntb\skin\default\img\indent.gif" />
+    <Content Include="system_dntb\skin\default\img\inserthorizontalrule.gif" />
+    <Content Include="system_dntb\skin\default\img\insertimage.gif" />
+    <Content Include="system_dntb\skin\default\img\insertimage3.gif" />
+    <Content Include="system_dntb\skin\default\img\insertorderedlist.gif" />
+    <Content Include="system_dntb\skin\default\img\insertunorderedlist.gif" />
+    <Content Include="system_dntb\skin\default\img\italic.gif" />
+    <Content Include="system_dntb\skin\default\img\justifycenter.gif" />
+    <Content Include="system_dntb\skin\default\img\justifyleft.gif" />
+    <Content Include="system_dntb\skin\default\img\justifyright.gif" />
+    <Content Include="system_dntb\skin\default\img\logo.gif" />
+    <Content Include="system_dntb\skin\default\img\logo.png" />
+    <Content Include="system_dntb\skin\default\img\logo1.gif" />
+    <Content Include="system_dntb\skin\default\img\media.gif" />
+    <Content Include="system_dntb\skin\default\img\media1.gif" />
+    <Content Include="system_dntb\skin\default\img\min.gif" />
+    <Content Include="system_dntb\skin\default\img\msn.gif" />
+    <Content Include="system_dntb\skin\default\img\msn1.gif" />
+    <Content Include="system_dntb\skin\default\img\next.gif" />
+    <Content Include="system_dntb\skin\default\img\outdent.gif" />
+    <Content Include="system_dntb\skin\default\img\palette.gif" />
+    <Content Include="system_dntb\skin\default\img\paste.gif" />
+    <Content Include="system_dntb\skin\default\img\pastetext.gif" />
+    <Content Include="system_dntb\skin\default\img\pasteword.gif" />
+    <Content Include="system_dntb\skin\default\img\plus.gif" />
+    <Content Include="system_dntb\skin\default\img\poweredby_aspnet.gif" />
+    <Content Include="system_dntb\skin\default\img\prev.gif" />
+    <Content Include="system_dntb\skin\default\img\preview1.gif" />
+    <Content Include="system_dntb\skin\default\img\preview_en-us.gif" />
+    <Content Include="system_dntb\skin\default\img\preview_zh-cn.gif" />
+    <Content Include="system_dntb\skin\default\img\preview_zh-tw.gif" />
+    <Content Include="system_dntb\skin\default\img\print.gif" />
+    <Content Include="system_dntb\skin\default\img\printer.gif" />
+    <Content Include="system_dntb\skin\default\img\printer1.gif" />
+    <Content Include="system_dntb\skin\default\img\printpage.gif" />
+    <Content Include="system_dntb\skin\default\img\qq.gif" />
+    <Content Include="system_dntb\skin\default\img\qq1.gif" />
+    <Content Include="system_dntb\skin\default\img\quote.gif" />
+    <Content Include="system_dntb\skin\default\img\quote1.gif" />
+    <Content Include="system_dntb\skin\default\img\Rar.gif" />
+    <Content Include="system_dntb\skin\default\img\rar1.gif" />
+    <Content Include="system_dntb\skin\default\img\redo.gif" />
+    <Content Include="system_dntb\skin\default\img\removeformat.gif" />
+    <Content Include="system_dntb\skin\default\img\save.gif" />
+    <Content Include="system_dntb\skin\default\img\search.gif" />
+    <Content Include="system_dntb\skin\default\img\selectall.gif" />
+    <Content Include="system_dntb\skin\default\img\source1.gif" />
+    <Content Include="system_dntb\skin\default\img\source_en-us.gif" />
+    <Content Include="system_dntb\skin\default\img\source_zh-cn.gif" />
+    <Content Include="system_dntb\skin\default\img\source_zh-tw.gif" />
+    <Content Include="system_dntb\skin\default\img\sub.gif" />
+    <Content Include="system_dntb\skin\default\img\sup.gif" />
+    <Content Include="system_dntb\skin\default\img\table.gif" />
+    <Content Include="system_dntb\skin\default\img\template.GIF" />
+    <Content Include="system_dntb\skin\default\img\textarea.gif" />
+    <Content Include="system_dntb\skin\default\img\time.gif" />
+    <Content Include="system_dntb\skin\default\img\time1.gif" />
+    <Content Include="system_dntb\skin\default\img\underline.gif" />
+    <Content Include="system_dntb\skin\default\img\undo.gif" />
+    <Content Include="system_dntb\skin\default\img\upload.gif" />
+    <Content Include="system_dntb\skin\default\img\upload1.gif" />
+    <Content Include="system_dntb\skin\default\img\url.gif" />
+    <Content Include="system_dntb\skin\default\img\winclose.gif" />
+    <Content Include="system_dntb\skin\default\img\word.gif" />
+    <Content Include="system_dntb\skin\default\img\Zip.gif" />
+    <Content Include="system_dntb\skin\default\paper\Birthday.GIF" />
+    <Content Include="system_dntb\skin\default\paper\children1.GIF" />
+    <Content Include="system_dntb\skin\default\paper\christmas.GIF" />
+    <Content Include="system_dntb\skin\default\paper\Citrus.gif" />
+    <Content Include="system_dntb\skin\default\paper\Clear.jpg" />
+    <Content Include="system_dntb\skin\default\paper\Fiesta.jpg" />
+    <Content Include="system_dntb\skin\default\paper\Flower.GIF" />
+    <Content Include="system_dntb\skin\default\paper\Gathering.JPG" />
+    <Content Include="system_dntb\skin\default\paper\Glacier.jpg" />
+    <Content Include="system_dntb\skin\default\paper\grid.gif" />
+    <Content Include="system_dntb\skin\default\paper\Hearts.GIF" />
+    <Content Include="system_dntb\skin\default\paper\Ivy.gif" />
+    <Content Include="system_dntb\skin\default\paper\Maize.jpg" />
+    <Content Include="system_dntb\skin\default\paper\Nature.jpg" />
+    <Content Include="system_dntb\skin\default\paper\Network.gif" />
+    <Content Include="system_dntb\skin\default\paper\tech.gif" />
+    <Content Include="system_dntb\skin\default\toolbar.css" />
+    <Content Include="system_dntb\skin\XP\editor.css" />
+    <Content Include="system_dntb\skin\XP\emot.aspx" />
+    <Content Include="system_dntb\skin\XP\face\other1\001.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\002.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\003.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\004.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\005.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\006.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\007.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\008.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\009.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\010.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\011.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\012.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\013.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\014.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\015.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\016.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\017.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\018.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\019.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\020.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\021.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\022.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\023.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\024.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\025.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\026.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\027.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\028.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\029.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\030.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\031.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\032.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\033.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\034.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\035.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\036.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\037.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\038.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\039.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\040.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\041.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\042.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\043.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\044.gif" />
+    <Content Include="system_dntb\skin\XP\face\other1\045.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\001.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\002.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\003.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\004.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\005.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\006.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\007.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\008.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\009.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\010.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\011.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\012.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\013.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\014.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\015.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\016.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\017.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\018.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\019.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\020.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\021.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\022.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\023.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\024.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\025.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\026.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\027.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\028.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\029.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\030.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\031.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\032.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\033.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\034.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\035.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\036.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\037.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\038.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\039.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\040.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\041.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\042.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\043.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\044.gif" />
+    <Content Include="system_dntb\skin\XP\face\other2\045.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\001.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\002.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\003.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\004.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\005.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\006.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\007.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\008.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\009.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\010.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\011.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\012.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\013.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\014.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\015.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\016.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\017.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\018.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\019.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\020.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\021.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\022.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\023.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\024.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\025.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\026.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\027.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\028.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\029.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\030.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\031.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\032.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\033.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\034.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\035.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\036.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\037.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\038.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\039.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\040.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\041.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\042.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\043.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\044.gif" />
+    <Content Include="system_dntb\skin\XP\face\qq\045.gif" />
+    <Content Include="system_dntb\skin\XP\help.htm" />
+    <Content Include="system_dntb\skin\XP\help\about.htm" />
+    <Content Include="system_dntb\skin\XP\help\edit.htm" />
+    <Content Include="system_dntb\skin\XP\help\face.htm" />
+    <Content Include="system_dntb\skin\XP\help\function.htm" />
+    <Content Include="system_dntb\skin\XP\help\main.htm" />
+    <Content Include="system_dntb\skin\XP\help\menu.htm" />
+    <Content Include="system_dntb\skin\XP\help\question.htm" />
+    <Content Include="system_dntb\skin\XP\help\skill.htm" />
+    <Content Include="system_dntb\skin\XP\help\state.htm" />
+    <Content Include="system_dntb\skin\XP\help\top.htm" />
+    <Content Include="system_dntb\skin\XP\img\aspnet2.gif" />
+    <Content Include="system_dntb\skin\XP\img\bgcolor.gif" />
+    <Content Include="system_dntb\skin\XP\img\bian.gif" />
+    <Content Include="system_dntb\skin\XP\img\bold.gif" />
+    <Content Include="system_dntb\skin\XP\img\browser-support.gif" />
+    <Content Include="system_dntb\skin\XP\img\Calculator.gif" />
+    <Content Include="system_dntb\skin\XP\img\code.gif" />
+    <Content Include="system_dntb\skin\XP\img\code2.gif" />
+    <Content Include="system_dntb\skin\XP\img\copy.gif" />
+    <Content Include="system_dntb\skin\XP\img\createlink.gif" />
+    <Content Include="system_dntb\skin\XP\img\cut.gif" />
+    <Content Include="system_dntb\skin\XP\img\date.gif" />
+    <Content Include="system_dntb\skin\XP\img\delete.gif" />
+    <Content Include="system_dntb\skin\XP\img\edit1.gif" />
+    <Content Include="system_dntb\skin\XP\img\edit_en-us.gif" />
+    <Content Include="system_dntb\skin\XP\img\edit_zh-cn.gif" />
+    <Content Include="system_dntb\skin\XP\img\edit_zh-tw.gif" />
+    <Content Include="system_dntb\skin\XP\img\emot.gif" />
+    <Content Include="system_dntb\skin\XP\img\excel.gif" />
+    <Content Include="system_dntb\skin\XP\img\fieldset.gif" />
+    <Content Include="system_dntb\skin\XP\img\font.gif" />
+    <Content Include="system_dntb\skin\XP\img\forecolor.gif" />
+    <Content Include="system_dntb\skin\XP\img\getpage.gif" />
+    <Content Include="system_dntb\skin\XP\img\help-1.gif" />
+    <Content Include="system_dntb\skin\XP\img\help.gif" />
+    <Content Include="system_dntb\skin\XP\img\help1.gif" />
+    <Content Include="system_dntb\skin\XP\img\icq.gif" />
+    <Content Include="system_dntb\skin\XP\img\indent.gif" />
+    <Content Include="system_dntb\skin\XP\img\inserthorizontalrule.gif" />
+    <Content Include="system_dntb\skin\XP\img\insertimage.gif" />
+    <Content Include="system_dntb\skin\XP\img\insertorderedlist.gif" />
+    <Content Include="system_dntb\skin\XP\img\insertunorderedlist.gif" />
+    <Content Include="system_dntb\skin\XP\img\italic.gif" />
+    <Content Include="system_dntb\skin\XP\img\justifycenter.gif" />
+    <Content Include="system_dntb\skin\XP\img\justifyleft.gif" />
+    <Content Include="system_dntb\skin\XP\img\justifyright.gif" />
+    <Content Include="system_dntb\skin\XP\img\logo.gif" />
+    <Content Include="system_dntb\skin\XP\img\logo.png" />
+    <Content Include="system_dntb\skin\XP\img\logo1.gif" />
+    <Content Include="system_dntb\skin\XP\img\logo_s.GIF" />
+    <Content Include="system_dntb\skin\XP\img\media.gif" />
+    <Content Include="system_dntb\skin\XP\img\min.gif" />
+    <Content Include="system_dntb\skin\XP\img\msn.gif" />
+    <Content Include="system_dntb\skin\XP\img\next.gif" />
+    <Content Include="system_dntb\skin\XP\img\outdent.gif" />
+    <Content Include="system_dntb\skin\XP\img\palette.gif" />
+    <Content Include="system_dntb\skin\XP\img\paste.gif" />
+    <Content Include="system_dntb\skin\XP\img\pastetext.gif" />
+    <Content Include="system_dntb\skin\XP\img\pasteword.gif" />
+    <Content Include="system_dntb\skin\XP\img\pleasewait.gif" />
+    <Content Include="system_dntb\skin\XP\img\plus.gif" />
+    <Content Include="system_dntb\skin\XP\img\poweredby_aspnet.gif" />
+    <Content Include="system_dntb\skin\XP\img\prev.gif" />
+    <Content Include="system_dntb\skin\XP\img\preview1.gif" />
+    <Content Include="system_dntb\skin\XP\img\preview_en-us.gif" />
+    <Content Include="system_dntb\skin\XP\img\preview_zh-cn.gif" />
+    <Content Include="system_dntb\skin\XP\img\preview_zh-tw.gif" />
+    <Content Include="system_dntb\skin\XP\img\printer.gif" />
+    <Content Include="system_dntb\skin\XP\img\printpage.gif" />
+    <Content Include="system_dntb\skin\XP\img\qq.gif" />
+    <Content Include="system_dntb\skin\XP\img\qq1.gif" />
+    <Content Include="system_dntb\skin\XP\img\quote.gif" />
+    <Content Include="system_dntb\skin\XP\img\quote1.gif" />
+    <Content Include="system_dntb\skin\XP\img\Rar.gif" />
+    <Content Include="system_dntb\skin\XP\img\rar1.gif" />
+    <Content Include="system_dntb\skin\XP\img\redo.gif" />
+    <Content Include="system_dntb\skin\XP\img\removeformat.gif" />
+    <Content Include="system_dntb\skin\XP\img\save.gif" />
+    <Content Include="system_dntb\skin\XP\img\search.gif" />
+    <Content Include="system_dntb\skin\XP\img\selectall.gif" />
+    <Content Include="system_dntb\skin\XP\img\source1.gif" />
+    <Content Include="system_dntb\skin\XP\img\source_en-us.gif" />
+    <Content Include="system_dntb\skin\XP\img\source_zh-cn.gif" />
+    <Content Include="system_dntb\skin\XP\img\source_zh-tw.gif" />
+    <Content Include="system_dntb\skin\XP\img\sub.gif" />
+    <Content Include="system_dntb\skin\XP\img\sup.gif" />
+    <Content Include="system_dntb\skin\XP\img\table.gif" />
+    <Content Include="system_dntb\skin\XP\img\template.GIF" />
+    <Content Include="system_dntb\skin\XP\img\textarea.gif" />
+    <Content Include="system_dntb\skin\XP\img\time.gif" />
+    <Content Include="system_dntb\skin\XP\img\underline.gif" />
+    <Content Include="system_dntb\skin\XP\img\undo.gif" />
+    <Content Include="system_dntb\skin\XP\img\upload.gif" />
+    <Content Include="system_dntb\skin\XP\img\upload1.gif" />
+    <Content Include="system_dntb\skin\XP\img\url.gif" />
+    <Content Include="system_dntb\skin\XP\img\winclose.gif" />
+    <Content Include="system_dntb\skin\XP\img\word.gif" />
+    <Content Include="system_dntb\skin\XP\img\wordpaste.gif" />
+    <Content Include="system_dntb\skin\XP\img\Zip.gif" />
+    <Content Include="system_dntb\skin\XP\paper\Birthday.GIF" />
+    <Content Include="system_dntb\skin\XP\paper\children1.GIF" />
+    <Content Include="system_dntb\skin\XP\paper\christmas.GIF" />
+    <Content Include="system_dntb\skin\XP\paper\Citrus.gif" />
+    <Content Include="system_dntb\skin\XP\paper\Clear.jpg" />
+    <Content Include="system_dntb\skin\XP\paper\Fiesta.jpg" />
+    <Content Include="system_dntb\skin\XP\paper\Flower.GIF" />
+    <Content Include="system_dntb\skin\XP\paper\Gathering.JPG" />
+    <Content Include="system_dntb\skin\XP\paper\Glacier.jpg" />
+    <Content Include="system_dntb\skin\XP\paper\grid.gif" />
+    <Content Include="system_dntb\skin\XP\paper\Hearts.GIF" />
+    <Content Include="system_dntb\skin\XP\paper\Ivy.gif" />
+    <Content Include="system_dntb\skin\XP\paper\Maize.jpg" />
+    <Content Include="system_dntb\skin\XP\paper\Nature.jpg" />
+    <Content Include="system_dntb\skin\XP\paper\Network.gif" />
+    <Content Include="system_dntb\skin\XP\paper\tech.gif" />
+    <Content Include="system_dntb\skin\XP\toolbar.css" />
+    <Content Include="system_dntb\stylesheet.css" />
+    <Content Include="system_dntb\stylesheet2.css" />
+    <Content Include="system_dntb\stylesheet3.css" />
+    <Content Include="system_dntb\table.aspx" />
+    <Content Include="system_dntb\uploadFile.aspx" />
+    <Content Include="system_dntb\uploadImg.aspx" />
+    <Content Include="system_dntb\uploadMedia.aspx" />
+    <Content Include="system_dntb\uploadTemplate.aspx" />
+    <Content Include="system_dntb\upload\1.jpg" />
+    <Content Include="system_dntb\upload\2.jpg" />
+    <Content Include="system_dntb\upload\3.jpg" />
+    <Content Include="system_dntb\upload\b201110090729152084.jpg" />
+    <Content Include="system_dntb\upload\ceRsVX2ZxvjrM.jpg" />
+    <Content Include="system_dntb\upload\pics_iammine_1308838180.jpg" />
+    <Content Include="system_dntb\zh-cn\Resources.xml" />
+    <Content Include="system_dntb\zh-tw\Resources.xml" />
+    <Content Include="system_dntb\目录说明.txt" />
+    <Content Include="system_dntb\请不要修改此目录结构.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Accounts\Add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\EditRole.aspx.cs">
+      <DependentUpon>editrole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\EditRole.aspx.designer.cs">
+      <DependentUpon>editrole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\Index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\Index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\PermissionAdmin.aspx.cs">
+      <DependentUpon>permissionadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\PermissionAdmin.aspx.designer.cs">
+      <DependentUpon>permissionadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\RoleAdmin.aspx.cs">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\RoleAdmin.aspx.designer.cs">
+      <DependentUpon>RoleAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\RoleAssignment.aspx.cs">
+      <DependentUpon>roleassignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\RoleAssignment.aspx.designer.cs">
+      <DependentUpon>roleassignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserAdmin.aspx.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserAdmin.aspx.designer.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserAdminList.aspx.cs">
+      <DependentUpon>UserAdminList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserAdminList.aspx.designer.cs">
+      <DependentUpon>UserAdminList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserAssignmentRole.aspx.cs">
+      <DependentUpon>UserAssignmentRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserAssignmentRole.aspx.designer.cs">
+      <DependentUpon>UserAssignmentRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserType.aspx.cs">
+      <DependentUpon>UserType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Admin\UserType.aspx.designer.cs">
+      <DependentUpon>UserType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\DefaultMaster.master.cs">
+      <DependentUpon>DefaultMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Drawable\ImageDetail.aspx.cs">
+      <DependentUpon>ImageDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Drawable\ImageDetail.aspx.designer.cs">
+      <DependentUpon>ImageDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Drawable\ImageItem.aspx.cs">
+      <DependentUpon>ImageItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Drawable\ImageItem.aspx.designer.cs">
+      <DependentUpon>ImageItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Drawable\ImageItemList.aspx.cs">
+      <DependentUpon>ImageItemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Drawable\ImageItemList.aspx.designer.cs">
+      <DependentUpon>ImageItemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Infor\InforList.aspx.cs">
+      <DependentUpon>InforList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Infor\InforList.aspx.designer.cs">
+      <DependentUpon>InforList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\News\EditNews.aspx.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\News\EditNews.aspx.designer.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\News\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\News\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\AddTrace.aspx.cs">
+      <DependentUpon>AddTrace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\AddTrace.aspx.designer.cs">
+      <DependentUpon>AddTrace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\AjaxFileUpload.aspx.cs">
+      <DependentUpon>AjaxFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\AjaxTest.aspx.cs">
+      <DependentUpon>AjaxTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\AjaxTest.aspx.designer.cs">
+      <DependentUpon>AjaxTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\ImageByLocationList.aspx.cs">
+      <DependentUpon>ImageByLocationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\ImageByLocationList.aspx.designer.cs">
+      <DependentUpon>ImageByLocationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\ImageDetails.aspx.cs">
+      <DependentUpon>ImageDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\ImageDetails.aspx.designer.cs">
+      <DependentUpon>ImageDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\LocationByTraceList.aspx.cs">
+      <DependentUpon>LocationByTraceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\LocationByTraceList.aspx.designer.cs">
+      <DependentUpon>LocationByTraceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\PictureList.aspx.cs">
+      <DependentUpon>PictureList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\Picture\PictureList.aspx.designer.cs">
+      <DependentUpon>PictureList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\SetPass.aspx.cs">
+      <DependentUpon>setpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\SetPass.aspx.designer.cs">
+      <DependentUpon>setpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\userinfo.aspx.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\userinfo.aspx.designer.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\usermodify.aspx.cs">
+      <DependentUpon>usermodify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\usermodify.aspx.designer.cs">
+      <DependentUpon>usermodify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\userPass.aspx.cs">
+      <DependentUpon>userpass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\userPass.aspx.designer.cs">
+      <DependentUpon>userpass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\userupdate.aspx.cs">
+      <DependentUpon>userupdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\userupdate.aspx.designer.cs">
+      <DependentUpon>userupdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Accounts\User\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Accounts\User\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Left.aspx.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Left.aspx.designer.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Relogin.aspx.cs">
+      <DependentUpon>Relogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Relogin.aspx.designer.cs">
+      <DependentUpon>Relogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ShowCallBoard.aspx.cs">
+      <DependentUpon>ShowCallBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ShowCallBoard.aspx.designer.cs">
+      <DependentUpon>ShowCallBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Spliter.aspx.cs">
+      <DependentUpon>Spliter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Spliter.aspx.designer.cs">
+      <DependentUpon>Spliter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\IndexTree.aspx.cs">
+      <DependentUpon>IndexTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\IndexTree.aspx.designer.cs">
+      <DependentUpon>IndexTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\LogIndex.aspx.cs">
+      <DependentUpon>logindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\LogIndex.aspx.designer.cs">
+      <DependentUpon>logindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\LogShow.aspx.cs">
+      <DependentUpon>logshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\LogShow.aspx.designer.cs">
+      <DependentUpon>logshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\makesql.aspx.cs">
+      <DependentUpon>makesql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\makesql.aspx.designer.cs">
+      <DependentUpon>makesql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\modify.aspx.cs">
+      <DependentUpon>modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\modify.aspx.designer.cs">
+      <DependentUpon>modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\show.aspx.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\show.aspx.designer.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysManage\treelist.aspx.cs">
+      <DependentUpon>treelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysManage\treelist.aspx.designer.cs">
+      <DependentUpon>treelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\toindex.aspx.cs">
+      <DependentUpon>toindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\toindex.aspx.designer.cs">
+      <DependentUpon>toindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BizNeed\HttpResult.cs" />
+    <Compile Include="BizNeed\WebUtils.cs" />
+    <Compile Include="Client\CommentClientDo.aspx.cs">
+      <DependentUpon>CommentClientDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\CommentClientDo.aspx.designer.cs">
+      <DependentUpon>CommentClientDo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\ImageDoClient.aspx.cs">
+      <DependentUpon>ImageDoClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\ImageDoClient.aspx.designer.cs">
+      <DependentUpon>ImageDoClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\NewsDoClient.aspx.cs">
+      <DependentUpon>NewsDoClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\NewsDoClient.aspx.designer.cs">
+      <DependentUpon>NewsDoClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\PostFile.aspx.cs">
+      <DependentUpon>PostFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\PostFile.aspx.designer.cs">
+      <DependentUpon>PostFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\UserClientDo.aspx.cs">
+      <DependentUpon>UserClientDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\UserClientDo.aspx.designer.cs">
+      <DependentUpon>UserClientDo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\UserDoClient.aspx.cs">
+      <DependentUpon>UserDoClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\UserDoClient.aspx.designer.cs">
+      <DependentUpon>UserDoClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\DirectSQLOnServer.aspx.cs">
+      <DependentUpon>DirectSQLOnServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\DirectSQLOnServer.aspx.designer.cs">
+      <DependentUpon>DirectSQLOnServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckRight.ascx.cs">
+      <DependentUpon>checkright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckRight.ascx.designer.cs">
+      <DependentUpon>checkright.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CopyRight.ascx.cs">
+      <DependentUpon>copyright.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CopyRight.ascx.designer.cs">
+      <DependentUpon>copyright.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultMaster.master.cs">
+      <DependentUpon>DefaultMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="news\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news\NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news\Show.aspx.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news\Show.aspx.designer.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\Accounts\Add.aspx.resx">
+      <DependentUpon>Add.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\EditRole.aspx.resx">
+      <DependentUpon>EditRole.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\Index.aspx.resx">
+      <DependentUpon>Index.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\PermissionAdmin.aspx.resx">
+      <DependentUpon>PermissionAdmin.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\RoleAdmin.aspx.resx">
+      <DependentUpon>RoleAdmin.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\RoleAssignment.aspx.resx">
+      <DependentUpon>RoleAssignment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\Admin\UserAdmin.aspx.resx">
+      <DependentUpon>UserAdmin.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\userinfo.aspx.resx">
+      <DependentUpon>userinfo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\usermodify.aspx.resx">
+      <DependentUpon>usermodify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\userPass.aspx.resx">
+      <DependentUpon>userPass.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Accounts\userupdate.aspx.resx">
+      <DependentUpon>userupdate.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Left.aspx.resx">
+      <DependentUpon>Left.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Logout.aspx.resx">
+      <DependentUpon>Logout.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Main.aspx.resx">
+      <DependentUpon>Main.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Relogin.aspx.resx">
+      <DependentUpon>Relogin.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ShowCallBoard.aspx.resx">
+      <DependentUpon>ShowCallBoard.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Spliter.aspx.resx">
+      <DependentUpon>Spliter.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\add.aspx.resx">
+      <DependentUpon>add.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\delete.aspx.resx">
+      <DependentUpon>delete.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\LogIndex.aspx.resx">
+      <DependentUpon>LogIndex.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\LogShow.aspx.resx">
+      <DependentUpon>LogShow.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\makesql.aspx.resx">
+      <DependentUpon>makesql.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\modify.aspx.resx">
+      <DependentUpon>modify.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\search.aspx.resx">
+      <DependentUpon>search.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\show.aspx.resx">
+      <DependentUpon>show.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SysManage\treelist.aspx.resx">
+      <DependentUpon>treelist.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\toindex.aspx.resx">
+      <DependentUpon>toindex.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Top.aspx.resx">
+      <DependentUpon>Top.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\NotTextBox\DotNetTextBox\DotNetTextBox.csproj">
+      <Project>{F330FBCD-6381-4D42-8F1A-1C921CC26ABA}</Project>
+      <Name>DotNetTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\fastjson\fastJSON\fastJSON.csproj">
+      <Project>{207E91B1-C9F8-4913-88E1-3549EF5F3273}</Project>
+      <Name>fastJSON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\crypto\crypto.csproj">
+      <Project>{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0}</Project>
+      <Name>crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Accounts\add.aspx" />
+    <Content Include="Admin\Accounts\Admin\editrole.aspx" />
+    <Content Include="Admin\Accounts\Admin\index.aspx" />
+    <Content Include="Admin\Accounts\Admin\permissionadmin.aspx" />
+    <Content Include="Admin\Accounts\Admin\RoleAdmin.aspx" />
+    <Content Include="Admin\Accounts\Admin\roleassignment.aspx" />
+    <Content Include="Admin\Accounts\Admin\UserAdmin.aspx" />
+    <Content Include="Admin\Accounts\Admin\UserAdminList.aspx" />
+    <Content Include="Admin\Accounts\Admin\UserAssignmentRole.aspx" />
+    <Content Include="Admin\Accounts\Admin\UserRoleAssignment.aspx" />
+    <Content Include="Admin\Accounts\Admin\UserType.aspx" />
+    <Content Include="Admin\Accounts\images\adminLeftArrow.gif" />
+    <Content Include="Admin\Accounts\images\admin_top_bg.gif" />
+    <Content Include="Admin\Accounts\images\bg.gif" />
+    <Content Include="Admin\Accounts\images\bg1.gif" />
+    <Content Include="Admin\Accounts\images\bg2.gif" />
+    <Content Include="Admin\Accounts\images\bg3.gif" />
+    <Content Include="Admin\Accounts\images\bottombg.gif" />
+    <Content Include="Admin\Accounts\images\btnreview.GIF" />
+    <Content Include="Admin\Accounts\images\button-join.gif" />
+    <Content Include="Admin\Accounts\images\button-login.gif" />
+    <Content Include="Admin\Accounts\images\button_add.gif" />
+    <Content Include="Admin\Accounts\images\button_back.gif" />
+    <Content Include="Admin\Accounts\images\button_cancel.gif" />
+    <Content Include="Admin\Accounts\images\button_close.gif" />
+    <Content Include="Admin\Accounts\images\button_del.gif" />
+    <Content Include="Admin\Accounts\images\button_edit.gif" />
+    <Content Include="Admin\Accounts\images\button_look.gif" />
+    <Content Include="Admin\Accounts\images\button_ok.gif" />
+    <Content Include="Admin\Accounts\images\button_save.gif" />
+    <Content Include="Admin\Accounts\images\button_search.GIF" />
+    <Content Include="Admin\Accounts\images\button_sift.gif" />
+    <Content Include="Admin\Accounts\images\button_update.gif" />
+    <Content Include="Admin\Accounts\images\lan1.gif" />
+    <Content Include="Admin\Accounts\images\lan12.gif" />
+    <Content Include="Admin\Accounts\images\loading.gif" />
+    <Content Include="Admin\Accounts\images\navspacer.gif" />
+    <Content Include="Admin\Accounts\images\skin2\downbg.gif" />
+    <Content Include="Admin\Accounts\images\skin2\topbar_01.jpg" />
+    <Content Include="Admin\Accounts\images\topbg.gif" />
+    <Content Include="Admin\Accounts\setpass.aspx" />
+    <Content Include="Admin\Accounts\style\css.css" />
+    <Content Include="Admin\Accounts\style\style.css" />
+    <Content Include="Admin\Accounts\userinfo.aspx" />
+    <Content Include="Admin\Accounts\usermodify.aspx" />
+    <Content Include="Admin\Accounts\userpass.aspx" />
+    <Content Include="Admin\Accounts\userupdate.aspx" />
+    <Content Include="Admin\Images\about16.gif" />
+    <Content Include="Admin\Images\add16.gif" />
+    <Content Include="Admin\Images\a_te01.gif" />
+    <Content Include="Admin\Images\a_te02.gif" />
+    <Content Include="Admin\Images\b1.gif" />
+    <Content Include="Admin\Images\b11-1.gif" />
+    <Content Include="Admin\Images\b11-2.gif" />
+    <Content Include="Admin\Images\b11.gif" />
+    <Content Include="Admin\Images\b12.gif" />
+    <Content Include="Admin\Images\b13-1.gif" />
+    <Content Include="Admin\Images\b13-2.gif" />
+    <Content Include="Admin\Images\b13.gif" />
+    <Content Include="Admin\Images\b3.gif" />
+    <Content Include="Admin\Images\b4.gif" />
+    <Content Include="Admin\Images\b5.gif" />
+    <Content Include="Admin\Images\bar_00.gif" />
+    <Content Include="Admin\Images\bar_01.gif" />
+    <Content Include="Admin\Images\bar_02.gif" />
+    <Content Include="Admin\Images\bar_03.gif" />
+    <Content Include="Admin\Images\bar_04.gif" />
+    <Content Include="Admin\Images\bar_05.gif" />
+    <Content Include="Admin\Images\bar_06.gif" />
+    <Content Include="Admin\Images\bar_07.gif" />
+    <Content Include="Admin\Images\bar_08.gif" />
+    <Content Include="Admin\Images\bar_10.gif" />
+    <Content Include="Admin\Images\bg.gif" />
+    <Content Include="Admin\Images\bgx.GIF" />
+    <Content Include="Admin\Images\bg_01.gif" />
+    <Content Include="Admin\Images\bg_02.gif" />
+    <Content Include="Admin\Images\bg_03.gif" />
+    <Content Include="Admin\Images\blank.gif" />
+    <Content Include="Admin\Images\bottom_01.gif" />
+    <Content Include="Admin\Images\bottom_02.gif" />
+    <Content Include="Admin\Images\bottom_03.gif" />
+    <Content Include="Admin\Images\Briefcase16.gif" />
+    <Content Include="Admin\Images\Briefcase32.gif" />
+    <Content Include="Admin\Images\button_edit.gif" />
+    <Content Include="Admin\Images\button_search.GIF" />
+    <Content Include="Admin\Images\c6.gif" />
+    <Content Include="Admin\Images\card16.gif" />
+    <Content Include="Admin\Images\card32.gif" />
+    <Content Include="Admin\Images\company16.gif" />
+    <Content Include="Admin\Images\css.css" />
+    <Content Include="Admin\Images\d2.gif" />
+    <Content Include="Admin\Images\d3.gif" />
+    <Content Include="Admin\Images\desktop16.gif" />
+    <Content Include="Admin\Images\desktop32.gif" />
+    <Content Include="Admin\Images\desktop_01.gif" />
+    <Content Include="Admin\Images\desktop_02.gif" />
+    <Content Include="Admin\Images\desktop_03.gif" />
+    <Content Include="Admin\Images\dsj16.gif" />
+    <Content Include="Admin\Images\dsj32.gif" />
+    <Content Include="Admin\Images\f3.gif" />
+    <Content Include="Admin\Images\f4.gif" />
+    <Content Include="Admin\Images\find16.gif" />
+    <Content Include="Admin\Images\find32.gif" />
+    <Content Include="Admin\Images\folder16.gif" />
+    <Content Include="Admin\Images\folder32.gif" />
+    <Content Include="Admin\Images\foldergreen_16.gif" />
+    <Content Include="Admin\Images\ger16.gif" />
+    <Content Include="Admin\Images\ger32.gif" />
+    <Content Include="Admin\Images\gongg16.gif" />
+    <Content Include="Admin\Images\gongg32.gif" />
+    <Content Include="Admin\Images\gongzkp16.gif" />
+    <Content Include="Admin\Images\gongzkp32.gif" />
+    <Content Include="Admin\Images\help16.gif" />
+    <Content Include="Admin\Images\help32.gif" />
+    <Content Include="Admin\Images\image.gif" />
+    <Content Include="Admin\Images\in_bg.gif" />
+    <Content Include="Admin\Images\left-1-1.gif" />
+    <Content Include="Admin\Images\left-1-2.gif" />
+    <Content Include="Admin\Images\left-1-3.gif" />
+    <Content Include="Admin\Images\left-1.gif" />
+    <Content Include="Admin\Images\left-2-1.gif" />
+    <Content Include="Admin\Images\left-2-2.gif" />
+    <Content Include="Admin\Images\left-2-3.gif" />
+    <Content Include="Admin\Images\left-2.gif" />
+    <Content Include="Admin\Images\left-3-1.gif" />
+    <Content Include="Admin\Images\left-3-2.gif" />
+    <Content Include="Admin\Images\left-3-3.gif" />
+    <Content Include="Admin\Images\left-3.gif" />
+    <Content Include="Admin\Images\left-bj-1.gif" />
+    <Content Include="Admin\Images\left-bj-2.gif" />
+    <Content Include="Admin\Images\left-bj-3.gif" />
+    <Content Include="Admin\Images\left-bj.gif" />
+    <Content Include="Admin\Images\Loading.gif" />
+    <Content Include="Admin\Images\login.css" />
+    <Content Include="Admin\Images\login_p_img02.gif" />
+    <Content Include="Admin\Images\login_p_img03.gif" />
+    <Content Include="Admin\Images\login_p_img04.gif" />
+    <Content Include="Admin\Images\login_p_img05.gif" />
+    <Content Include="Admin\Images\login_p_img11.gif" />
+    <Content Include="Admin\Images\mag16.gif" />
+    <Content Include="Admin\Images\mail16.gif" />
+    <Content Include="Admin\Images\main_01.gif" />
+    <Content Include="Admin\Images\main_04.gif" />
+    <Content Include="Admin\Images\main_05.gif" />
+    <Content Include="Admin\Images\main_06.gif" />
+    <Content Include="Admin\Images\main_08.gif" />
+    <Content Include="Admin\Images\main_09.gif" />
+    <Content Include="Admin\Images\member_t04.JPG" />
+    <Content Include="Admin\Images\MenuImg\288.GIF" />
+    <Content Include="Admin\Images\MenuImg\about16.gif" />
+    <Content Include="Admin\Images\MenuImg\bbs16.gif" />
+    <Content Include="Admin\Images\MenuImg\find16.gif" />
+    <Content Include="Admin\Images\MenuImg\folder16.gif" />
+    <Content Include="Admin\Images\MenuImg\foldergreen_16.gif" />
+    <Content Include="Admin\Images\MenuImg\ger16.gif" />
+    <Content Include="Admin\Images\MenuImg\help16.gif" />
+    <Content Include="Admin\Images\MenuImg\news16.gif" />
+    <Content Include="Admin\Images\MenuImg\out16.gif" />
+    <Content Include="Admin\Images\MenuImg\Programs16.gif" />
+    <Content Include="Admin\Images\MenuImg\quanx16.gif" />
+    <Content Include="Admin\Images\MenuImg\thumbnails.gif" />
+    <Content Include="Admin\Images\MenuImg\times.gif" />
+    <Content Include="Admin\Images\MenuImg\ts16.gif" />
+    <Content Include="Admin\Images\MenuImg\user16.gif" />
+    <Content Include="Admin\Images\MenuImg\xinx16.gif" />
+    <Content Include="Admin\Images\MenuImg\zhut16.gif" />
+    <Content Include="Admin\Images\MenuImg\zjsp16.gif" />
+    <Content Include="Admin\Images\message16.gif" />
+    <Content Include="Admin\Images\module16.gif" />
+    <Content Include="Admin\Images\module32.gif" />
+    <Content Include="Admin\Images\more1.gif" />
+    <Content Include="Admin\Images\myfile16.gif" />
+    <Content Include="Admin\Images\myfile32.gif" />
+    <Content Include="Admin\Images\news16.gif" />
+    <Content Include="Admin\Images\onecard16.gif" />
+    <Content Include="Admin\Images\onecard32.gif" />
+    <Content Include="Admin\Images\out16.gif" />
+    <Content Include="Admin\Images\out32.gif" />
+    <Content Include="Admin\Images\plan16.gif" />
+    <Content Include="Admin\Images\plan32.gif" />
+    <Content Include="Admin\Images\point07.gif" />
+    <Content Include="Admin\Images\quanx16.gif" />
+    <Content Include="Admin\Images\quanx32.gif" />
+    <Content Include="Admin\Images\right-bj-1.gif" />
+    <Content Include="Admin\Images\right-bj-2.gif" />
+    <Content Include="Admin\Images\right-bj-3.gif" />
+    <Content Include="Admin\Images\right-bj.gif" />
+    <Content Include="Admin\Images\spacer.gif" />
+    <Content Include="Admin\Images\style.css" />
+    <Content Include="Admin\Images\top-1-1.gif" />
+    <Content Include="Admin\Images\top-1-2.gif" />
+    <Content Include="Admin\Images\top-1-3.gif" />
+    <Content Include="Admin\Images\top-1.gif" />
+    <Content Include="Admin\Images\top-2-1.gif" />
+    <Content Include="Admin\Images\top-2-2.gif" />
+    <Content Include="Admin\Images\top-2-3.gif" />
+    <Content Include="Admin\Images\top-2.gif" />
+    <Content Include="Admin\Images\top-3-1.gif" />
+    <Content Include="Admin\Images\top-3-2.gif" />
+    <Content Include="Admin\Images\top-3-3.gif" />
+    <Content Include="Admin\Images\top-3.gif" />
+    <Content Include="Admin\Images\top-4-1.gif" />
+    <Content Include="Admin\Images\top-4-2.gif" />
+    <Content Include="Admin\Images\top-4-3.gif" />
+    <Content Include="Admin\Images\top-4.gif" />
+    <Content Include="Admin\Images\top-5-1.gif" />
+    <Content Include="Admin\Images\top-5-2.gif" />
+    <Content Include="Admin\Images\top-5-3.gif" />
+    <Content Include="Admin\Images\top-5.gif" />
+    <Content Include="Admin\Images\top-bj-1.gif" />
+    <Content Include="Admin\Images\top-bj-2.gif" />
+    <Content Include="Admin\Images\top-bj-3.gif" />
+    <Content Include="Admin\Images\top-bj.gif" />
+    <Content Include="Admin\Images\topbar_01.jpg" />
+    <Content Include="Admin\Images\topbar_02.jpg" />
+    <Content Include="Admin\Images\topbar_03.jpg" />
+    <Content Include="Admin\Images\tubiao_01.GIF" />
+    <Content Include="Admin\Images\tubiao_02.gif" />
+    <Content Include="Admin\Images\user16.gif" />
+    <Content Include="Admin\Images\vote16.gif" />
+    <Content Include="Admin\Images\x16.gif" />
+    <Content Include="Admin\Images\xinx16.gif" />
+    <Content Include="Admin\Images\xinx32.gif" />
+    <Content Include="Admin\Images\yw16.gif" />
+    <Content Include="Admin\Images\zhut16.gif" />
+    <Content Include="Admin\Images\zjsp16.gif" />
+    <Content Include="Admin\Left.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Logout.aspx" />
+    <Content Include="Admin\Main.aspx" />
+    <Content Include="Admin\Main.htm" />
+    <Content Include="Admin\Relogin.aspx" />
+    <Content Include="Admin\ShowCallBoard.aspx" />
+    <Content Include="Admin\Spliter.aspx" />
+    <Content Include="Admin\Style.css" />
+    <Content Include="Admin\SysManage\add.aspx" />
+    <Content Include="Admin\SysManage\CheckBox.js" />
+    <Content Include="Admin\SysManage\delete.aspx" />
+    <Content Include="Admin\SysManage\IndexTree.aspx" />
+    <Content Include="Admin\SysManage\logindex.aspx" />
+    <Content Include="Admin\SysManage\logshow.aspx" />
+    <Content Include="Admin\SysManage\makesql.aspx" />
+    <Content Include="Admin\SysManage\modify.aspx" />
+    <Content Include="Admin\SysManage\search.aspx" />
+    <Content Include="Admin\SysManage\show.aspx" />
+    <Content Include="Admin\SysManage\treelist.aspx" />
+    <Content Include="Admin\toindex.aspx" />
+    <Content Include="Admin\Top.aspx" />
+    <Content Include="MasterPage.master" />
+    <Content Include="ValidateCode.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Accounts\DefaultMaster.master" />
+    <None Include="Admin\Accounts\images\skin2\Thumbs.db" />
+    <None Include="Admin\Accounts\images\skin2\vssver2.scc" />
+    <None Include="Admin\Accounts\images\Thumbs.db" />
+    <None Include="Admin\Accounts\images\vssver2.scc" />
+    <Content Include="system_dntb\Advanced.config" />
+    <Content Include="DefaultMaster.master" />
+    <None Include="system_dntb\Lexers\ActiproSoftware.SyntaxEditor.LanguageDefinition.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="system_dntb\Lexers\ActiproSoftware.SyntaxEditor.LanguageDefinition.xsx">
+      <DependentUpon>ActiproSoftware.SyntaxEditor.LanguageDefinition.xsd</DependentUpon>
+    </None>
+    <Content Include="system_dntb\menuconfig\administrator.config" />
+    <Content Include="system_dntb\menuconfig\all.config" />
+    <Content Include="system_dntb\menuconfig\all_3row.config" />
+    <Content Include="system_dntb\menuconfig\custom1.config" />
+    <Content Include="system_dntb\menuconfig\custom2.config" />
+    <Content Include="system_dntb\menuconfig\default.config" />
+    <Content Include="system_dntb\menuconfig\guest.config" />
+    <Content Include="system_dntb\menuconfig\user.config" />
+    <Content Include="system_dntb\menuconfig\word.config" />
+    <Content Include="system_dntb\uploadconfig\administrator.config" />
+    <Content Include="system_dntb\uploadconfig\default.config" />
+    <Content Include="system_dntb\uploadconfig\guest.config" />
+    <Content Include="system_dntb\uploadconfig\user.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Images\" />
+    <Folder Include="uploader\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3448</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3449/NewsTwitter</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

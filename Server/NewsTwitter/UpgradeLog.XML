@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NewsTwitter">
+</Property><Property Name="解决方案文件" Value="D:\CodematicDemo\CodematicDemo\NewsTwitter\NewsTwitter.sln">
+</Property><Property Name="Date" Value="2012年9月13日">
+</Property><Property Name="Time" Value="10:30:15">
+</Property></Properties><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\DotNetTextBox.csproj" Description="项目文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\DotNetTextBox.csproj">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\Advanced.cs" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\Advanced.cs">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\AssemblyInfo.cs" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\CollectionSystem.cs" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\CollectionSystem.cs">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\LanguageCache.cs" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\LanguageCache.cs">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\ResourceManager.cs" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\ResourceManager.cs">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\UpLoad.cs" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\UpLoad.cs">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\WebEditor.cs" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\WebEditor.cs">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\DotNetTextBox.snk" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\DotNetTextBox.snk">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\WebEditor.bmp" Description="文件已成功备份为 D:\CodematicDemo\CodematicDemo\NewsTwitter\Backup\WebEditor.bmp">
+</Event><Event ErrorLevel="1" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\DotNetTextBox.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\DotNetTextBox.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\DotNetTextBox.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DotNetTextBox" Source="..\..\NotTextBox\DotNetTextBox\DotNetTextBox.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

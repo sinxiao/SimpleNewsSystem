@@ -1,0 +1,17 @@
+D:\dcsource\csharp\crypto\bin\Debug\crypto.dll
+D:\dcsource\csharp\crypto\bin\Debug\crypto.pdb
+D:\dcsource\csharp\crypto\bin\Debug\crypto.xml
+D:\dcsource\csharp\crypto\bin\Debug\nunit.core.dll
+D:\dcsource\csharp\crypto\bin\Debug\nunit.core.interfaces.dll
+D:\dcsource\csharp\crypto\bin\Debug\nunit.framework.dll
+D:\dcsource\csharp\crypto\obj\Debug\crypto.csprojResolveAssemblyReference.cache
+D:\dcsource\csharp\crypto\obj\Debug\crypto.dll
+D:\dcsource\csharp\crypto\obj\Debug\crypto.pdb
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\crypto\bin\Debug\crypto.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\crypto\bin\Debug\crypto.pdb
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\crypto\bin\Debug\crypto.xml
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\crypto\bin\Debug\nunit.core.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\crypto\bin\Debug\nunit.core.interfaces.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\crypto\bin\Debug\nunit.framework.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\crypto\obj\Debug\crypto.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\crypto\obj\Debug\crypto.pdb

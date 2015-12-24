@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="3dip"
+    android:paddingTop="3dip" >
+
+    <ImageView
+        android:id="@+id/newsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/itemNews"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_toLeftOf="@id/newsIcon"
+        android:orientation="vertical"
+        android:paddingBottom="2dip" >
+
+        <TextView
+            android:id="@+id/txtTile"
+            android:layout_width="fill_parent"
+            android:ellipsize="marquee"
+            android:layout_height="wrap_content"
+            android:text="AAAAAAAAAAAAA"
+            android:textSize="23dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB1212213213234"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toolLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemNews"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:paddingBottom="2dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="2dip"
+            android:textSize="14dip"
+            android:text="comment" />
+    </LinearLayout>
+
+</RelativeLayout>

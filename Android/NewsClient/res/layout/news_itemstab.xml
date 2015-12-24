@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_tab_host"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mainAll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/mainHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/head" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_channel_bg_normal"
+            android:gravity="center_vertical" >
+
+            <!-- 新闻列表，行业新闻 -->
+
+            <Button
+                android:id="@+id/btnNews"
+                style="@style/frame_button"
+                android:text="@string/news" />
+
+            <!-- 正在发生的新闻，及时新闻 -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/frame_button_cutline" />
+
+            <Button
+                android:id="@+id/btnAir"
+                style="@style/frame_button"
+                android:text="@string/air" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/frame_button_cutline" />
+            <!-- 自己收藏的新闻，新闻对现在造成了大大的影响，造成了各种人认知的全新改变与革命  博文 -->
+
+            <Button
+                android:id="@+id/btnOlds"
+                style="@style/frame_button"
+                android:text="@string/olds" />
+            <!-- 好友新闻，由好友发布的各种新闻或评论。博客，微博日志等等 -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/frame_button_cutline" />
+
+            <Button
+                android:id="@+id/btnFNews"
+                style="@style/frame_button"
+                android:text="@string/fnews" />
+        </LinearLayout>
+
+        <!-- 显示新闻列表的地方 通过 左右滑动可以选择新闻类别  上面显示新闻的也要会相应改变 -->
+
+       
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+               />
+
+           
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+    </RelativeLayout>
+
+</TabHost>

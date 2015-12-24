@@ -1,0 +1,77 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="frame_button">
+        <item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_height">fill_parent</item>
+       	<item name="android:layout_weight">1</item>
+       	<item name="android:background">@drawable/frame_button_bg</item>
+       	<item name="android:textColor">@color/frame_button_text_light</item>
+    </style>
+    
+    <style name="footbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>  
+        <item name="android:button">@null</item>  
+        <item name="android:paddingTop">@dimen/space_1</item>
+        <item name="android:paddingBottom">@dimen/space_3</item>
+    </style>
+    <style name="user_center_footbar" parent="footbar">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:padding">0dip</item>
+    </style>
+	
+    <style name="main_footbar_radio" parent="footbar">
+        <item name="android:background">@drawable/widget_bar_bg</item>
+        <item name="android:padding">0dip</item>
+    </style>
+	<style name="main_footbar_image">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/widget_bar_bg</item>
+        <item name="android:clickable">true</item>
+    </style>
+   	<style name="main_footbar_cutline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="detail_cut_line">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">2.0dip</item>
+		<item name="android:layout_marginTop">8.0dip</item>
+		<item name="android:layout_marginBottom">10.0dip</item>
+		<item name="android:layout_marginLeft">6.0dip</item>
+		<item name="android:layout_marginRight">6.0dip</item>
+		<item name="android:background">@drawable/line_bluegray</item>
+	</style>
+	 <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:indeterminateDrawable">@anim/loading</item>
+		<item name="android:layout_width">21dip</item> 
+		<item name="android:layout_height">21dip</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+     <style name="detail_head_title">
+        <item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">@dimen/text_size_20</item>
+		<item name="android:textColor">@color/head_text</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#ffffffff</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">1</item>
+    </style>
+    
+</resources>

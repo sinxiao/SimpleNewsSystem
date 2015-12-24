@@ -1,0 +1,9 @@
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\Model\bin\Debug\WoeMobile.Model.dll
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\Model\bin\Debug\WoeMobile.Model.pdb
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\Model\obj\Debug\WoeMobile.Model.dll
+E:\android\workspace\DClient\web\CodematicDemo\CodematicDemo\NewsTwitter\Model\obj\Debug\WoeMobile.Model.pdb
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\Model\bin\Debug\WoeMobile.Model.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\Model\bin\Debug\WoeMobile.Model.pdb
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\Model\obj\Debug\WoeMobile.Model.dll
+D:\dcsource\WebServer\CodematicDemo\CodematicDemo\NewsTwitter\Model\obj\Debug\WoeMobile.Model.pdb
